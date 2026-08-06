@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+
+@layer base {
+  body {
+    @apply bg-[#faf6f1] text-[#2c1f14] font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#8b5e3c] hover:bg-[#a0704f] text-[#f5e6d3] px-8 py-3 rounded-full 
+           text-sm tracking-widest uppercase transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply border border-[#8b5e3c] text-[#8b5e3c] hover:bg-[#8b5e3c] hover:text-[#f5e6d3] 
+           px-8 py-3 rounded-full text-sm tracking-widest uppercase transition-all duration-300;
+  }
+
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl text-[#4a2f20] text-center mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-[#8b7b6b] text-center max-w-2xl mx-auto mb-12 leading-relaxed;
+  }
+}
